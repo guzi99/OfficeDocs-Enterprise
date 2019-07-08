@@ -60,16 +60,12 @@ The best way to determine your site's performance weak points is to set up a com
 ## Viewing SharePoint response header information
 <a name="F12ToolInfo"> </a>
 
-In SharePoint Online and SharePoint Server 2013 you can access the information that is sent back to the browser in the response header for each file. The two most useful values for diagnosing performance issues are SPRequestDuration and X-SharePointHealthScore:
+In SharePoint Online and SharePoint Server 2013 you can access the information that is sent back to the browser in the response header for each file. The most useful values for diagnosing performance issues is SPRequestDuration:
   
 - **SPRequestDuration**
     
     This is the amount of time that the request took on the server to be processed. This can help determine if the request is very heavy and resource intensive. This is the best insight you have into how much work the server is doing to serve the page.
-    
-- **X-SharePointHealthScore**
-    
-    This indicates the utilization of the server, or CPU, on which your SharePoint instance runs. This number ranges from 0 to 10 where 0 indicates the server is idle and 10 indicates the server is very busy. A HealthScore that is consistently 9 or 10 might indicate an ongoing performance issue with the server. Any other number indicates that server is operating within the expected range.
-    
+      
  **To view SharePoint response header information**
   
 1. Ensure that you have the F12 tools installed. For more information on downloading and installing these tools, see [What's new in F12 tools](https://go.microsoft.com/fwlink/p/?LinkId=522545).
